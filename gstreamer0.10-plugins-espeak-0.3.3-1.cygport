@@ -1,0 +1,9 @@
+inherit gst-plugins0.10
+
+HOMEPAGE="http://wiki.sugarlabs.org/go/Activity_Team/gst-plugins-espeak"
+SRC_URI="http://download.sugarlabs.org/sources/honey/${ORIG_PN}/${ORIG_PN}-${PV}.tar.bz2"
+
+PATCH_URI="
+	0.3.3-no-undefined.patch
+	0.3.3-printf-format.patch
+"

@@ -1,0 +1,5 @@
+category: Accessibility Audio
+requires: libespeak1 libgcc1 libglib2.0_0 libgstreamer0.10_0
+sdesc: "GStreamer eSpeak plugin"
+ldesc: "This GStreamer plugin uses given text to produce audio output via 
+the eSpeak speech synthesis library."
