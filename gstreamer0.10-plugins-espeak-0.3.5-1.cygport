@@ -1,0 +1,17 @@
+inherit gst-plugins0.10
+
+CATEGORY="Audio Sugar"
+SUMMARY="GStreamer eSpeak plugin"
+DESCRIPTION="This GStreamer plugin uses given text to produce audio output via
+the eSpeak speech synthesis library."
+HOMEPAGE="http://wiki.sugarlabs.org/go/Activity_Team/gst-plugins-espeak"
+SRC_URI="http://download.sugarlabs.org/sources/honey/${ORIG_PN}/${ORIG_PN}-${PV}.tar.gz"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	cd ${B}
+	gst_plugins_compile
+}
+
+KEEP_LA_FILES="none"
