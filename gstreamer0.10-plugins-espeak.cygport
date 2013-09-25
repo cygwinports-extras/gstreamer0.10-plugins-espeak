@@ -1,11 +1,14 @@
-inherit gst-plugins0.10
+inherit gst-plugins
 
+NAME="gstreamer0.10-plugins-espeak"
+VERSION=0.3.5
+RELEASE=1
 CATEGORY="Audio Sugar"
 SUMMARY="GStreamer eSpeak plugin"
 DESCRIPTION="This GStreamer plugin uses given text to produce audio output via
 the eSpeak speech synthesis library."
 HOMEPAGE="http://wiki.sugarlabs.org/go/Activity_Team/gst-plugins-espeak"
-SRC_URI="http://download.sugarlabs.org/sources/honey/${ORIG_PN}/${ORIG_PN}-${PV}.tar.gz"
+SRC_URI="http://download.sugarlabs.org/sources/honey/gst-plugins-espeak/gst-plugins-espeak-${VERSION}.tar.gz"
 
 src_compile() {
 	cd ${S}
